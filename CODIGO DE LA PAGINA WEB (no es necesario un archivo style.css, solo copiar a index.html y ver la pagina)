@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soluciones de Límites - Cálculo</title>
+
+  <!-- Enlace a Bootstrap 4 CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Enlace a MathJax para mostrar las fórmulas matemáticas -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <!-- Estilos personalizados dentro del archivo HTML -->
+  <style>
+    /* Establece el color de fondo a negro */
+    body {
+      background-color: #000;  /* Fondo negro */
+      color: #000;  /* Texto negro para el cuerpo */
+    }
+
+    /* Cajas con borde, margin y padding */
+    .caja {
+      border: 2px solid #007bff;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco translúcido */
+    }
+
+    /* Ajustes para el menú sándwich */
+    .navbar {
+      background-color: rgba(0, 123, 255, 0.8);
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+      color: #fff; /* Texto blanco en el menú */
+    }
+
+    .navbar-light .navbar-toggler-icon {
+      background-color: #fff; /* Color blanco para el icono del menú */
+    }
+
+    /* Titulo principal */
+    .titulo {
+      color: #fff;  /* Título en blanco */
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    /* Texto de las soluciones */
+    .solucion {
+      font-size: 18px;
+      font-weight: 600;
+      color: #000;  /* Texto de la solución en negro */
+    }
+
+    /* Texto explicativo */
+    .explicacion {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #000;  /* Texto explicativo en negro */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegación con menú sándwich -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#ejercicio1">Ejercicio 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ejercicio2">Ejercicio 2</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Título principal -->
+  <div class="titulo">
+    Soluciones de Límites en Cálculo
+  </div>
+
+  <!-- Contenedor principal con cajas para cada solución -->
+  <div class="container contenido" id="ejercicio1">
+    <div class="caja">
+      <h3 class="text-center">Ejercicio i) \( \lim_{x \to 0} \frac{\sin(3x)}{x} \)</h3>
+      <p class="solucion">
+        El límite se calcula utilizando el hecho conocido de que \( \lim_{x \to 0} \frac{\sin(x)}{x} = 1 \). Este es un resultado fundamental en cálculo y es utilizado para resolver muchos otros límites en diversas situaciones.
+      </p>
+      <p class="explicacion">
+        En este caso particular, tenemos que trabajar con \( \frac{\sin(3x)}{x} \). Sabemos que \( \frac{\sin(x)}{x} \to 1 \) cuando \( x \) tiende a cero, pero aquí estamos trabajando con \( 3x \) en lugar de \( x \). Para resolver este límite, utilizamos la propiedad de los límites, aplicando el cambio de variable y obteniendo el siguiente resultado:
+      </p>
+      <p class="solucion">
+        \( \lim_{x \to 0} \frac{\sin(3x)}{x} = \lim_{x \to 0} \frac{\sin(3x)}{3x} \cdot 3 = 1 \cdot 3 = 3 \)
+      </p>
+      <p class="explicacion">
+        Por lo tanto, el resultado final es 3. Este resultado muestra cómo las funciones trigonométricas se comportan cerca de \( x = 0 \) y cómo podemos usar las propiedades de los límites para simplificar cálculos. Es importante entender que el valor \( 3 \) se obtiene gracias a la relación trigonométrica fundamental.
+      </p>
+      <p class="solucion">
+        Por lo tanto, el resultado es: <strong>3</strong>
+      </p>
+    </div>
+  </div>
+
+  <div class="container contenido" id="ejercicio2">
+    <div class="caja">
+      <h3 class="text-center">Ejercicio ii) \( \lim_{x \to 0} \frac{(\sin(2x))^2}{x} \)</h3>
+      <p class="solucion">
+        Este límite involucra la función \( (\sin(2x))^2 \), lo cual complica un poco el cálculo. Sin embargo, podemos aplicar el conocimiento de que \( \lim_{x \to 0} \frac{\sin(x)}{x} = 1 \) para simplificar el proceso.
+      </p>
+      <p class="explicacion">
+        En este caso, lo primero que debemos hacer es escribir el límite como el producto de dos términos: uno relacionado con \( \frac{\sin(2x)}{x} \) y otro con \( \sin(2x) \). Al aplicar la propiedad del límite, podemos separarlos y obtener el resultado deseado:
+      </p>
+      <p class="solucion">
+        \( \lim_{x \to 0} \frac{(\sin(2x))^2}{x} = \lim_{x \to 0} \frac{\sin(2x)}{x} \cdot \sin(2x) = 2 \cdot 0 = 0 \)
+      </p>
+      <p class="explicacion">
+        Como puedes ver, el resultado es 0. Esto ocurre porque \( \sin(2x) \) tiende a 0 cuando \( x \to 0 \), y como resultado, el valor del límite es 0. Este es un ejemplo clásico de cómo los límites de funciones trigonométricas pueden simplificarse mediante el uso de propiedades fundamentales.
+      </p>
+      <p class="solucion">
+        Por lo tanto, el resultado es: <strong>0</strong>
+      </p>
+    </div>
+  </div>
+
+  <!-- Enlace a jQuery, Popper.js y Bootstrap JS (para que funcione el menú sándwich) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
