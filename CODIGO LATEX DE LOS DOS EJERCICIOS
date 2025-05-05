@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{Solución de los Límites}
+
+En este ejercicio, se nos piden calcular dos límites fundamentales en análisis matemático que involucran la función seno.
+
+\subsection*{Ejercicio i) \( \lim_{x \to 0} \frac{\sin(3x)}{x} \)}
+
+Queremos calcular el siguiente límite:
+
+\[
+\lim_{x \to 0} \frac{\sin(3x)}{x}
+\]
+
+Sabemos que:
+
+\[
+\lim_{x \to 0} \frac{\sin(x)}{x} = 1
+\]
+
+Sin embargo, en este caso tenemos \( \sin(3x) \), y necesitamos hacer un cambio de variable para poder aplicar el resultado conocido. Escribimos la expresión de la siguiente manera:
+
+\[
+\frac{\sin(3x)}{x} = \frac{\sin(3x)}{3x} \cdot 3
+\]
+
+Sabemos que:
+
+\[
+\lim_{x \to 0} \frac{\sin(3x)}{3x} = 1
+\]
+
+Por lo tanto, el límite es:
+
+\[
+\lim_{x \to 0} \frac{\sin(3x)}{x} = 1 \cdot 3 = 3
+\]
+
+\textbf{Resultado:} El límite es \( 3 \).
+
+\subsection*{Ejercicio ii) \( \lim_{x \to 0} \frac{(\sin(2x))^2}{x} \)}
+
+En este ejercicio, tenemos que calcular el límite de:
+
+\[
+\lim_{x \to 0} \frac{(\sin(2x))^2}{x}
+\]
+
+Reescribimos la expresión para separar los términos:
+
+\[
+\frac{(\sin(2x))^2}{x} = \frac{\sin(2x)}{x} \cdot \sin(2x)
+\]
+
+Ahora, evaluamos cada término por separado.
+
+\subsubsection*{Paso 1: Evaluar \( \frac{\sin(2x)}{x} \)}
+
+Aplicamos un cambio de variable similar al ejercicio anterior:
+
+\[
+\frac{\sin(2x)}{x} = \frac{\sin(2x)}{2x} \cdot 2
+\]
+
+Sabemos que:
+
+\[
+\lim_{x \to 0} \frac{\sin(2x)}{2x} = 1
+\]
+
+Por lo tanto:
+
+\[
+\lim_{x \to 0} \frac{\sin(2x)}{x} = 2
+\]
+
+\subsubsection*{Paso 2: Evaluar \( \sin(2x) \)}
+
+Sabemos que:
+
+\[
+\lim_{x \to 0} \sin(2x) = 0
+\]
+
+\subsubsection*{Paso 3: Multiplicar los resultados}
+
+Ahora multiplicamos ambos términos:
+
+\[
+\lim_{x \to 0} \frac{(\sin(2x))^2}{x} = 2 \cdot 0 = 0
+\]
+
+\textbf{Resultado:} El límite es \( 0 \).
+
+\end{document}
